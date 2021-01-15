@@ -38,6 +38,10 @@ const getHeroeByIdAsync = ( id ) => {
 }
 
 
+getHeroeByIdAsync(2)
+    .then(heroe => console.log(heroe) )
+    .catch( err => console.warn(err) );
+
 getHeroeByIdAsync(1)
     .then( console.log )
     .catch( console.warn );
